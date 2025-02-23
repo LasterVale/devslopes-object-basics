@@ -30,7 +30,7 @@ function printPizza(pizzaPlace) {
   }
 }
 
-// printPizza(dominos);
+printPizza(dominos);
 
 function toppingsPriceRange(pizzaPlace) {
   const { pizzaToppings } = pizzaPlace;
@@ -46,7 +46,7 @@ function toppingsPriceRange(pizzaPlace) {
   return [highest, lowest];
 }
 
-// console.log(toppingsPriceRange(dominos));
+console.log(toppingsPriceRange(dominos));
 
 function calcAverage(pizzaPlace) {
   const { starReviews } = pizzaPlace;
@@ -58,4 +58,4 @@ function calcAverage(pizzaPlace) {
   return (sum / count).toFixed(2);
 }
 
-// console.log(calcAverage(dominos));
+console.log(calcAverage(dominos));

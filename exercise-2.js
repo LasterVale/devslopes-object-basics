@@ -27,3 +27,45 @@ const papaJohns = {
 // DO NOT EDIT THE ABOVE OBJECT // 
 
 // YOUR WORK GOES HERE // 
+
+// step 1 & 2
+function grabCategories(obj) {
+  return Object.keys(obj);
+}
+
+// step 3 & 4
+console.log(grabCategories(papaJohns));
+console.log(grabCategories(papaJohns.pizzaToppings));
+
+// step 5
+function verifyValues(obj, num) {
+  if (!(Object.values(obj).length === num)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+// function verifyValues(obj, targetCount) {
+//   return Object.keys(obj).length === targetCount;
+// }
+
+// step 6
+console.log(verifyValues(papaJohns, 9));
+
+// trial
+papaJohns.cool = true;
+console.log(verifyValues(papaJohns, 10));
+
+// step 7
+function getToppingsInfo(obj) {
+  return Object.entries(obj);
+}
+console.log(getToppingsInfo(papaJohns.pizzaToppings));
+
+// step 8
+
+papaJohns.printAd = function(topping) {
+  return `Welcome to Papa John's! We are located at 555 Main Street. This week, we are having a sale on ${topping} for ${papaJohns.pizzaToppings[topping]}. Better Ingredients. Better Pizza. Papa John's.`;
+}
+console.log(papaJohns.printAd('bacon'));

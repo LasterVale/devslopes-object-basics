@@ -26,7 +26,7 @@ Now that we can write, store, and modify objects, let's look at methods. Methods
 
 8. [ ] Now, without changing the previous code, add a `printAd` method to our `papaJohns` object that will announce a sale. It will intake a topping and return the following string:
 
-   `"Welcome to Papa John's! We are located at 555 Main Street. This week, we are having a sale on {topping} for ${topping price}. Better Ingredients. Better Pizza. Papa John's."`
+   `"Welcome to Papa John's! We are located at 555 Main Street. This week, we are having a sale on ${topping} for ${topping price}. Better Ingredients. Better Pizza. Papa John's."`
 
    - [ ] Run this function and pass in pizza toppings. Make sure the ad changes and displays the correct price for each one. For example, an input of `'bacon'` should announce a sale of bacon for `$3`.
 

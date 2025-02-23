@@ -26,3 +26,42 @@ const dominos = {
   zipcode: 54321,
   acceptsReservations: true,
 };
+
+// part 1 & 2
+const printPizzaPlace = (pizzaPlace) => {
+  for (let key in dominos) {
+    console.log(key, dominos[key])
+  }
+}
+printPizzaPlace()
+
+// step 3
+
+const toppingPriceRange = (pizzaPlace) => {
+  const { pizzaToppings } = pizzaPlace;
+  let highest = -Infinity;
+  let lowest = Infinity;
+  for (let key in pizzaToppings) {
+    if (pizzaToppings[key] > highest) {
+      highest = pizzaToppings[key];
+    }else if(pizzaToppings[key] < lowest) {
+      lowest = pizzaToppings[key];
+    }
+  }
+  console.log([highest, lowest]);
+}
+
+toppingPriceRange(dominos);
+
+// step 4
+const calculateAverageRating = (pizzaPlace) => {
+  const { starReviews } = pizzaPlace;
+  let sum = 0;
+  let count = Object.keys(starReviews).length;
+  for (let key in starReviews) {
+    sum += starReviews[key];
+  }
+  console.log((sum / count).toFixed(2));
+}
+
+calculateAverageRating(dominos);

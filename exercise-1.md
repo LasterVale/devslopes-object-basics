@@ -11,7 +11,7 @@ Now that you understand how to write objects and access their properties using d
    - [ ] `name`: string
    - [ ] `cuisines`: array of strings
    - [ ] `numberOfStars`: number
-   - [ ] `favorited`: boolean
+   - [ ] `isFavored`: boolean
 
 3. [ ] Whoops. It looks like we forgot some key information that we will need before recommending this restaurant to our users. Add the following properties **without changing the object literal** you created. How can we add the following properties to an object after it has already been created?
 
@@ -22,14 +22,14 @@ Now that you understand how to write objects and access their properties using d
 4. [ ] Amazing. Our object is almost ready for use in our application. However, the owner wants to update some of the information. Without changing your previous code, update the following object properties:
 
    - [ ] Add a star to the `numberOfStars`.
-   - [ ] Change the `favorited` boolean to the opposite.
+   - [ ] Change the `isFavored` boolean to the opposite.
    - [ ] Add a new cuisine to the array of `cuisines`.
 
 5. [ ] Now, let's make sure our code can handle a request for any object key. Write a function called `retrieveProperty` that intakes an object and string key. It should return the value associated with that key. If the input property does not exist on the object, return a string that says, `"The information you requested does not exist."`
 
 6. [ ] Invoke this function passing in your restaurant object and the following keys:
    - [ ] `cuisines` (returns the array of cuisines)
-   - [ ] `favorited` (returns the boolean)
+   - [ ] `isFavored` (returns the boolean)
    - [ ] `name` (returns the string name)
    - [ ] `nickName` (does not exist, should print string)
    - [ ] `state` (does not exist, should print string)
